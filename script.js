@@ -1,6 +1,6 @@
-const gerarNum = Math.floor(Math.random() * 4)
+const gerarNum = Math.floor(Math.random() * 101)
 let tentativas = 0;
-const maxTentativas = 3;
+const maxTentativas = 10;
 
 function adivinhacao(){
     //Entrada de Dados
