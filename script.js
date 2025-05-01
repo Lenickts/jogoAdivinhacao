@@ -38,9 +38,6 @@ function adivinhacao(){
     }
 
     tentativasRestantes.textContent = `Tentativas restantes: ${maxTentativas - tentativas}`;
-
-
-
 }
 
 

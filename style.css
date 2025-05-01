@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rubik+Wet+Paint&family=Shadows+Into+Light&family=Telex&display=swap');
+/* Josefin  / Rubik Wet / Telex / Gloria Hallelujah */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --fonte-titulo: "Rubik Wet Paint", system-ui;
+    --fonte-main:"Josefin Sans", sans-serif;
+    --tamanhoFonteTitulo: 70px;
+    --tamanhoFonteConteudo: 20px;
+}
+body{
+    background-color: rgb(219, 213, 213);
+}
+.main{
+    font-family: var(--fonte-main);
+    font-size: var(--tamanhoFonteConteudo);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border: 2px solid grey;
+    margin: 20px 20px 0 20px;
+    padding: 30px;
+}
+h1{
+    text-align: center;
+    margin: 20px;
+    font-family: var(--fonte-titulo);
+    font-size: var(--tamanhoFonteTitulo);
+}
+#resumo{
+    text-align: center;
+    margin-bottom: 50px;
+}
+label{
+    text-align: center;
+}
+.content-input{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    width: 200px;
+    box-sizing: border-box;
+    }
+    
+    input[type="number"]:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+/*Personalização do botao*/
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* verde */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.1s, box-shadow 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  button:active {
+    transform: scale(0.97);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  }
