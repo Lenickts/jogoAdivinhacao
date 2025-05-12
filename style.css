@@ -13,7 +13,16 @@
     --tamanhoFonteConteudo: 20px;
 }
 body{
-    background-color: rgb(219, 213, 213);
+    animation: gradient 10s ease alternate infinite;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab) no-repeat;
+    background-size: 300% 300%;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 100vh;
+    font-size: 300%;      
 }
 .main{
     font-family: var(--fonte-main);
@@ -82,3 +91,50 @@ button {
     transform: scale(0.97);
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
   }
+
+  /*Personalização do botao*/
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* verde */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.1s, box-shadow 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+  
+button:hover {
+    background-color: #45a049;
+}
+  
+button:active {
+    transform: scale(0.97);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Personalização INPUT: remoção dos spinners */
+/* Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@keyframes gradient{
+    0%{
+      background-position: 0 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+      background-position: 0 50%;
+    }
+}
